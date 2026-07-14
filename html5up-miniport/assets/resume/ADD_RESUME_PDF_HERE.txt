@@ -1,0 +1,7 @@
+Add the real resume PDF in this folder as:
+
+Mustapha-Strachan-Resume.pdf
+
+Then update the "View Resume" link in index.html to:
+
+assets/resume/Mustapha-Strachan-Resume.pdf
