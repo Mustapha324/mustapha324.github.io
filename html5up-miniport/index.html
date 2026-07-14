@@ -6,13 +6,12 @@
 	<title>Mustapha Strachan | Software Engineering Portfolio</title>
 	<meta name="description" content="Mustapha Strachan is a UCF Computer Science student in Orlando, Florida building software engineering, AI, machine learning, backend, and interactive application projects." />
 	<meta name="author" content="Mustapha Strachan" />
-	<meta name="theme-color" content="#0f766e" />
+	<meta name="theme-color" content="#080b18" />
 	<meta property="og:title" content="Mustapha Strachan | Software Engineering Portfolio" />
 	<meta property="og:description" content="UCF Computer Science student focused on software engineering, AI, backend systems, and practical interactive applications." />
 	<meta property="og:type" content="website" />
 	<meta property="og:site_name" content="Mustapha Strachan Portfolio" />
 	<meta property="og:locale" content="en_US" />
-	<!-- TODO: Replace this relative social image with an absolute deployed URL once the final public site URL is confirmed. -->
 	<meta property="og:image" content="assets/images/social-card.png" />
 	<meta name="twitter:card" content="summary_large_image" />
 	<meta name="twitter:title" content="Mustapha Strachan | Software Engineering Portfolio" />
@@ -24,6 +23,16 @@
 </head>
 <body>
 	<a class="skip-link" href="#main">Skip to main content</a>
+	<div class="ambient-stage" aria-hidden="true"></div>
+	<div class="motion-field" aria-hidden="true">
+		<span class="motion-glyph motion-glyph--1">&lt;/&gt;</span>
+		<span class="motion-glyph motion-glyph--2">AI</span>
+		<span class="motion-glyph motion-glyph--3">C++</span>
+		<span class="motion-glyph motion-glyph--4">01</span>
+		<span class="motion-glyph motion-glyph--5">API</span>
+		<span class="motion-glyph motion-glyph--6">ML</span>
+		<span class="motion-glyph motion-glyph--7">{ }</span>
+	</div>
 
 	<header class="site-header">
 		<nav class="site-nav" aria-label="Primary navigation">
@@ -31,7 +40,7 @@
 			<ul class="site-nav__links">
 				<li><a href="#about">About</a></li>
 				<li><a href="#experience">Experience</a></li>
-				<li><a href="#projects">Projects</a></li>
+				<li><a href="#projects">Projects &amp; Research</a></li>
 				<li><a href="#skills">Skills</a></li>
 				<li><a href="#education">Education</a></li>
 				<li><a href="#contact">Contact</a></li>
@@ -42,8 +51,8 @@
 	<main id="main">
 		<section id="home" class="hero section-band">
 			<div class="container hero__layout">
-				<div class="hero__content">
-					<p class="eyebrow">Orlando, Florida | UCF Computer Science</p>
+				<div class="hero__content reveal">
+					<p class="chapter-label">Digital Grimoire | Orlando, Florida | UCF Computer Science</p>
 					<h1>Mustapha Strachan</h1>
 					<p class="hero__title">Computer Science Student and Software Engineer</p>
 					<p class="hero__intro">
@@ -51,16 +60,22 @@
 					</p>
 					<div class="hero__actions" aria-label="Portfolio actions">
 						<a class="button" href="#projects">View Projects</a>
-						<!-- TODO: Replace this resume placeholder with assets/resume/Mustapha-Strachan-Resume.pdf after the real PDF is added. -->
-						<a class="button button--secondary" href="assets/resume/ADD_RESUME_PDF_HERE.txt">View Resume</a>
+						<a class="button button--secondary" href="assets/resume/Mustapha-Strachan-Resume.pdf" target="_blank" rel="noreferrer">View Resume</a>
 						<a class="button button--ghost" href="https://github.com/Mustapha324" target="_blank" rel="noreferrer">GitHub</a>
-						<!-- TODO: Replace this LinkedIn placeholder with Mustapha's confirmed LinkedIn profile URL. -->
-						<a class="button button--ghost button--placeholder" href="#contact" data-placeholder="linkedin-url-needed">LinkedIn</a>
+						<a class="button button--ghost" href="https://www.linkedin.com/in/mustapha-strachan-3a161231b/" target="_blank" rel="noreferrer">LinkedIn</a>
 					</div>
 				</div>
 
-				<aside class="profile-panel" aria-label="Portfolio snapshot">
-					<img src="assets/images/profile-monogram.png" alt="MS monogram for Mustapha Strachan" width="220" height="220" />
+				<aside class="hero-art reveal" aria-label="Portfolio snapshot">
+					<div class="portrait-frame" data-reactive-surface>
+						<img src="assets/images/mustapha-strachan-photo.jpg" alt="Portrait of Mustapha Strachan wearing a suit and blue bow tie at the beach" width="900" height="900" />
+						<div class="portrait-orbits" aria-hidden="true">
+							<span class="orbit-tag orbit-tag--one">AI</span>
+							<span class="orbit-tag orbit-tag--two">C++</span>
+							<span class="orbit-tag orbit-tag--three">ML</span>
+							<span class="orbit-tag orbit-tag--four">API</span>
+						</div>
+					</div>
 					<dl class="profile-panel__facts">
 						<div>
 							<dt>Focus</dt>
@@ -79,13 +94,13 @@
 			</div>
 		</section>
 
-		<section id="about" class="section-band section-band--light">
+		<section id="about" class="section-band section-band--deep">
 			<div class="container section-grid">
-				<div class="section-heading">
-					<p class="eyebrow">About Me</p>
+				<div class="section-heading reveal">
+					<p class="chapter-label">Chapter 01 | About Me</p>
 					<h2>Building useful software from classrooms, labs, and real projects.</h2>
 				</div>
-				<div class="section-copy">
+				<div class="section-copy glass-panel reveal">
 					<p>
 						I am a Bachelor of Science in Computer Science student at the University of Central Florida with a strong interest in software engineering, artificial intelligence, machine learning, backend development, and interactive applications.
 					</p>
@@ -98,12 +113,13 @@
 
 		<section id="experience" class="section-band">
 			<div class="container">
-				<div class="section-heading section-heading--center">
-					<p class="eyebrow">Experience</p>
-					<h2>Recent roles</h2>
+				<div class="section-heading section-heading--center reveal">
+					<p class="chapter-label">Chapter 02 | Experience</p>
+					<h2>Professional journey</h2>
+					<p>Technical contribution, team collaboration, mentorship, and steady growth.</p>
 				</div>
 				<div class="timeline">
-					<article class="timeline-item">
+					<article class="timeline-item reveal">
 						<div class="timeline-item__meta">
 							<span class="status-pill">Internship</span>
 							<p>June 2026 - July 2026</p>
@@ -122,9 +138,9 @@
 						</div>
 					</article>
 
-					<article class="timeline-item">
+					<article class="timeline-item reveal">
 						<div class="timeline-item__meta">
-							<span class="status-pill status-pill--warm">Mentorship</span>
+							<span class="status-pill status-pill--gold">Mentorship</span>
 							<p>May 2026 - Present</p>
 						</div>
 						<div class="timeline-item__body">
@@ -142,18 +158,19 @@
 			</div>
 		</section>
 
-		<section id="projects" class="section-band section-band--light">
+		<section id="projects" class="section-band section-band--deep">
 			<div class="container">
-				<div class="section-heading section-heading--center">
-					<p class="eyebrow">Featured Projects</p>
-					<h2>Software, data, and interactive systems</h2>
-					<p>Project links and screenshots are intentionally omitted until confirmed so the portfolio stays accurate.</p>
+				<div class="section-heading section-heading--center reveal">
+					<p class="chapter-label">Chapter 03 | Projects &amp; Research</p>
+					<h2>Artifacts, experiments, and engineering notes</h2>
+					<p>Featured work presented as focused technical entries, with links shown only when a confirmed URL is available.</p>
 				</div>
+				<div class="project-controls reveal" data-project-filters aria-label="Filter projects"></div>
 				<div id="featured-projects" class="project-grid" data-project-grid>
 					<noscript>
 						<article class="project-card">
 							<h3>MLB Game Outcome Predictor</h3>
-							<p>A full-stack app for predicting MLB game winners with prediction confidence, daily matchups, model performance, accuracy, and historical results.</p>
+							<p>A full-stack app for predicting MLB game winners with confidence, daily matchups, model performance, and historical results.</p>
 						</article>
 						<article class="project-card">
 							<h3>QIF-to-Unity Geometry Parser</h3>
@@ -170,21 +187,23 @@
 
 		<section id="skills" class="section-band">
 			<div class="container">
-				<div class="section-heading section-heading--center">
-					<p class="eyebrow">Technical Skills</p>
-					<h2>Tools I use to ship and learn</h2>
+				<div class="section-heading section-heading--center reveal">
+					<p class="chapter-label">Chapter 04 | Technical Skills</p>
+					<h2>Skill constellations</h2>
+					<p>Languages, tools, and engineering concepts organized for quick scanning.</p>
 				</div>
 				<div class="skills-grid" data-skills-grid aria-label="Technical skills"></div>
+				<p class="skill-focus reveal" data-skill-focus>Skill focus: software engineering toolkit</p>
 			</div>
 		</section>
 
-		<section id="education" class="section-band section-band--light">
+		<section id="education" class="section-band section-band--deep">
 			<div class="container education-layout">
-				<div class="section-heading">
-					<p class="eyebrow">Education</p>
+				<div class="section-heading reveal">
+					<p class="chapter-label">Chapter 05 | Education</p>
 					<h2>University of Central Florida</h2>
 				</div>
-				<div class="education-panel">
+				<div class="education-panel reveal">
 					<h3>Bachelor of Science in Computer Science</h3>
 					<p>Expected graduation: Spring 2028</p>
 					<p>GPA: 3.73</p>
@@ -193,22 +212,23 @@
 			</div>
 		</section>
 
-		<section id="contact" class="section-band section-band--dark">
+		<section id="contact" class="section-band section-band--contact">
 			<div class="container contact-layout">
-				<div>
-					<p class="eyebrow">Contact</p>
+				<div class="reveal">
+					<p class="chapter-label">Final Chapter | Contact</p>
 					<h2>Let's connect about software engineering, AI, or internship opportunities.</h2>
 					<p>
-						The safest contact setup for this static site is direct links instead of a form that would require a backend. GitHub is connected now; LinkedIn and email are marked for you to add when ready.
+						I am open to conversations about software engineering internships, AI and machine learning projects, backend systems, and collaborative technical work.
 					</p>
 				</div>
-				<ul class="contact-list" aria-label="Contact options">
+				<ul class="contact-list reveal" aria-label="Contact options">
+					<li><a href="mailto:mustapha324@outlook.com">mustapha324@outlook.com</a></li>
+					<li><button type="button" data-copy-email="mustapha324@outlook.com">Copy Email</button></li>
 					<li><a href="https://github.com/Mustapha324" target="_blank" rel="noreferrer">GitHub</a></li>
-					<!-- TODO: Replace this placeholder with Mustapha's confirmed LinkedIn profile URL. -->
-					<li><span class="contact-list__placeholder">LinkedIn URL needed</span></li>
-					<!-- TODO: Replace this placeholder with Mustapha's preferred public email address. -->
-					<li><span class="contact-list__placeholder">Email address needed</span></li>
+					<li><a href="https://www.linkedin.com/in/mustapha-strachan-3a161231b/" target="_blank" rel="noreferrer">LinkedIn</a></li>
+					<li><a href="assets/resume/Mustapha-Strachan-Resume.pdf" target="_blank" rel="noreferrer">Resume PDF</a></li>
 				</ul>
+				<p class="copy-status" data-copy-status aria-live="polite"></p>
 			</div>
 		</section>
 	</main>

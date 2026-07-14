@@ -8,9 +8,6 @@ Open `html5up-miniport/index.html` in a browser, or serve the repository with an
 
 ## Content still needed
 
-- Real resume PDF at `html5up-miniport/assets/resume/Mustapha-Strachan-Resume.pdf`
-- LinkedIn profile URL
-- Public email address
 - Confirmed GitHub repository links for featured projects
 - Live demo links, if any
 - Real project screenshots, if available
