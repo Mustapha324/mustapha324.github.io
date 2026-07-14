@@ -4,7 +4,7 @@ Static personal portfolio site for Mustapha Strachan, a Computer Science student
 
 ## Run locally
 
-Open `html5up-miniport/index.html` in a browser, or serve the repository with any simple static-file server and visit the `html5up-miniport` folder.
+Open the root-level `index.html` in a browser, or serve the repository root with any simple static-file server.
 
 ## Content still needed
 
