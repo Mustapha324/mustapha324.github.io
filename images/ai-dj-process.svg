@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 540" role="img" aria-labelledby="title desc">
+  <title id="title">AI DJ audio analysis and transition workflow</title>
+  <desc id="desc">Two audio tracks are analyzed for tempo, key, and energy. A transition plan produces a rendered mix.</desc>
+  <rect width="1200" height="540" fill="#141517"/>
+  <g stroke="#33363a" stroke-width="1"><path d="M0 90h1200M0 180h1200M0 270h1200M0 360h1200M0 450h1200"/><path d="M120 0v540M240 0v540M360 0v540M480 0v540M600 0v540M720 0v540M840 0v540M960 0v540M1080 0v540"/></g>
+  <text x="52" y="67" fill="#f47b4b" font-family="Arial,sans-serif" font-size="21" font-weight="700" letter-spacing="4">AI DJ / SIGNAL STUDY</text>
+  <text x="52" y="113" fill="#f5f5f3" font-family="Arial,sans-serif" font-size="31" font-weight="700">From two tracks to one continuous mix.</text>
+  <g fill="#202225" stroke="#56595d" stroke-width="2">
+    <rect x="52" y="167" width="310" height="235" rx="12"/><rect x="445" y="167" width="310" height="235" rx="12"/><rect x="838" y="167" width="310" height="235" rx="12"/>
+  </g>
+  <g font-family="Arial,sans-serif">
+    <text x="77" y="207" fill="#f47b4b" font-size="16" font-weight="700" letter-spacing="2">01 / INPUT</text>
+    <text x="470" y="207" fill="#f47b4b" font-size="16" font-weight="700" letter-spacing="2">02 / ANALYZE</text>
+    <text x="863" y="207" fill="#f47b4b" font-size="16" font-weight="700" letter-spacing="2">03 / MIX</text>
+    <text x="77" y="359" fill="#f4f3ef" font-size="23" font-weight="700">Audio tracks</text>
+    <text x="470" y="359" fill="#f4f3ef" font-size="23" font-weight="700">Transition plan</text>
+    <text x="863" y="359" fill="#f4f3ef" font-size="23" font-weight="700">Playable WAV</text>
+    <text x="77" y="380" fill="#a9acaf" font-size="13">WAV / MP3</text>
+    <text x="470" y="380" fill="#a9acaf" font-size="13">Tempo · key · energy · structure</text>
+    <text x="863" y="380" fill="#a9acaf" font-size="13">Beat aware crossfade</text>
+  </g>
+  <path d="M386 280h34m-10-10 10 10-10 10M779 280h34m-10-10 10 10-10 10" fill="none" stroke="#f47b4b" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M75 274l14-26 12 57 12-76 13 77 15-53 14 26 15-18 16 19 12-58 13 83 14-69 11 47 14-18 13 17 17-12 13 7 19-3" fill="none" stroke="#f47b4b" stroke-width="3"/>
+  <path d="M468 296c65-1 98-79 151-79 44 0 62 71 113 74" fill="none" stroke="#f47b4b" stroke-width="4"/>
+  <path d="M468 221c65 1 98 79 151 79 44 0 62-71 113-74" fill="none" stroke="#888e93" stroke-width="3"/>
+  <path d="M864 270l12-25 11 50 13-68 12 72 15-48 12 23 15-16 14 20 15-54 13 76 15-65 12 44 14-18 14 15 17-13 15 9 14-3 16 5" fill="none" stroke="#f47b4b" stroke-width="3"/>
+  <text x="52" y="484" fill="#a9acaf" font-family="Arial,sans-serif" font-size="16">Architecture illustration based on the public AI-DJ codebase.</text>
+</svg>
