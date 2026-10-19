@@ -2,41 +2,41 @@ import React, { useEffect, useState } from 'react';
 import { createRoot } from 'react-dom/client';
 
 function shouldShowIntro() {
-  if (window.location.hash || window.matchMedia('(prefers-reduced-motion: reduce)').matches) return false;
-  try {
-    return window.sessionStorage.getItem('launchSeen') !== '1';
-  } catch {
-    return false;
-  }
+  return !window.location.hash && !window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 }
 
 function RocketIntro() {
-  const [phase, setPhase] = useState(shouldShowIntro() ? 'launch' : 'done');
+  const [phase, setPhase] = useState(shouldShowIntro() ? 'prep' : 'done');
+  const [countdown, setCountdown] = useState(3);
+
+  useEffect(() => {
+    if (phase !== 'prep') return undefined;
+    const second = window.setTimeout(() => setCountdown(2), 750);
+    const third = window.setTimeout(() => setCountdown(1), 1500);
+    const lift = window.setTimeout(() => setPhase('launch'), 2250);
+    return () => [second, third, lift].forEach((timer) => window.clearTimeout(timer));
+  }, [phase]);
 
   useEffect(() => {
     if (phase !== 'launch') return undefined;
-    const exitTimer = window.setTimeout(() => setPhase('exit'), 1400);
+    const exitTimer = window.setTimeout(() => setPhase('exit'), 2000);
     return () => window.clearTimeout(exitTimer);
   }, [phase]);
 
   useEffect(() => {
     if (phase !== 'exit') return undefined;
-    const doneTimer = window.setTimeout(() => setPhase('done'), 500);
+    const doneTimer = window.setTimeout(() => setPhase('done'), 650);
     return () => window.clearTimeout(doneTimer);
-  }, [phase]);
-
-  useEffect(() => {
-    if (phase === 'done') {
-      try { window.sessionStorage.setItem('launchSeen', '1'); } catch { /* Storage may be unavailable. */ }
-    }
   }, [phase]);
 
   if (phase === 'done') return null;
 
   return (
-    <div className={`launch-screen ${phase === 'exit' ? 'launch-screen--exit' : ''}`} role="dialog" aria-label="Welcome animation">
+    <div className={`launch-screen launch-screen--${phase}`} role="dialog" aria-label="Welcome animation">
       <div className="launch-mark">M<span>.</span></div>
+      <div className="launch-headline"><span className="launch-overline">A new mission begins</span><h2>Ideas in motion<span>.</span></h2></div>
       <div className="launch-center" aria-hidden="true">
+        <div className="launch-orbit launch-orbit--outer" /><div className="launch-orbit launch-orbit--inner" />
         <div className="rocket-trail" />
         <svg className="launch-rocket" viewBox="0 0 80 130" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M40 4C23 21 19 43 19 71V90H61V71C61 43 57 21 40 4Z" fill="#F4F3F0" />
@@ -47,6 +47,7 @@ function RocketIntro() {
           <path className="rocket-flame" d="M33 104C33 116 40 127 40 127S47 116 47 104" fill="#F47B4B" />
         </svg>
       </div>
+      <div className="launch-status" aria-live="off"><strong>{phase === 'prep' ? `0${countdown}` : 'LIFTOFF'}</strong><span>{phase === 'prep' ? 'Preparing for launch' : 'On to the next challenge'}</span></div>
       <div className="launch-bottom"><span>Mustapha Strachan <span className="launch-divider">/</span> Software Engineer</span><button type="button" onClick={() => setPhase('done')}>Skip intro <span aria-hidden="true">↗</span></button></div>
     </div>
   );
