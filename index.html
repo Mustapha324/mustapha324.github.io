@@ -13,12 +13,14 @@
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="assets/css/main.css">
   <script src="assets/js/main.js" defer></script>
+  <script src="assets/js/site-ui.js" defer></script>
 </head>
 <body>
+  <div id="site-ui"></div>
   <a class="skip-link" href="#main">Skip to content</a>
   <header class="site-header"><div class="wrap nav-row">
     <a class="wordmark" href="#top" aria-label="Mustapha Strachan, back to top">Mustapha<span>.</span></a>
-    <nav aria-label="Main navigation"><a href="#work">Work</a><a href="#recognition">Recognition</a><a href="#experience">Experience</a><a href="#about">About</a></nav>
+    <nav aria-label="Main navigation"><a href="#experience">Experience</a><a href="#work">Work</a><a href="#recognition">Recognition</a><a href="#about">About</a><a href="#contact">Contact</a></nav>
     <a class="nav-contact" href="mailto:mustapha324@outlook.com">Get in touch <span aria-hidden="true">↗</span></a>
   </div></header>
   <main id="main">
@@ -27,13 +29,20 @@
         <p class="eyebrow"><span class="availability-dot" aria-hidden="true"></span> Computer science student · Orlando, FL</p>
         <h1>Building software<br>that makes <em>complex</em><br>things useful.</h1>
         <p class="hero-lede">I’m Mustapha Strachan, a UCF computer science student working across backend systems, simulation, and applied AI. I like getting the details right, from data pipelines to the interface people use.</p>
-        <div class="hero-actions"><a class="button" href="#work">Explore my work <span aria-hidden="true">↗</span></a><a class="text-link" href="assets/resume/Mustapha-Strachan-Resume.pdf" target="_blank" rel="noopener noreferrer">View résumé <span aria-hidden="true">↗</span></a></div>
+        <div class="hero-actions"><a class="button" href="#experience">Explore my experience <span aria-hidden="true">↗</span></a><a class="text-link" href="assets/resume/Mustapha-Strachan-Resume.pdf" target="_blank" rel="noopener noreferrer">View résumé <span aria-hidden="true">↗</span></a></div>
       </div>
       <div class="hero-aside"><figure class="portrait"><img src="images/mustapha-portrait.jpg" width="200" height="200" alt="Portrait of Mustapha Strachan"></figure><div class="hero-note"><span class="small-label">Currently</span><p>Studying computer science at the University of Central Florida. Expected graduation: Spring 2028.</p></div></div>
       <div class="hero-bottom" aria-hidden="true"><span>01 / Introduction</span><span>Scroll to explore ↓</span></div>
     </section>
+    <section class="section experience-section" id="experience"><div class="wrap">
+      <div class="section-heading"><p class="section-index">01 / Experience</p><div><h2>Working with people<br>and systems.</h2></div></div>
+      <div class="experience-list">
+        <article class="experience-item"><div class="experience-date">Jun — Jul 2026</div><div><h3>Quickstart SimJam Intern</h3><p class="experience-org">UCF Institute for Simulation and Training (METIL)</p><p>Collaborated on a QIF-to-Unity pipeline that turns manufacturing geometry and topology into selectable meshes. I implemented and debugged C++ parsing and OpenCascade translation components, working with teammates across native processing and the Unity importer.</p><figure class="work-visual"><img src="images/qif-unity-process.svg" width="1200" height="380" loading="lazy" alt="Diagram showing QIF XML transformed through C++ and OpenCascade into a selectable Unity mesh"><figcaption>Internship workflow · illustrated from résumé details</figcaption></figure><ul class="tags" aria-label="Technologies"><li>C++</li><li>OpenCascade</li><li>Unity</li><li>XML</li></ul></div></article>
+        <article class="experience-item"><div class="experience-date">May 2026 — Present</div><div><h3>SOAR Peer Mentor</h3><p class="experience-org">University of Central Florida</p><p>Help incoming students navigate academics, campus resources, and university life through one-on-one support, engagement activities, and clear communication with students and staff.</p></div></article>
+      </div>
+    </div></section>
     <section class="section work-section" id="work"><div class="wrap">
-      <div class="section-heading"><p class="section-index">01 / Selected work</p><div><h2>Things I’ve built.</h2><p>Projects where engineering decisions turn into something people can use.</p></div></div>
+      <div class="section-heading"><p class="section-index">02 / Selected work</p><div><h2>Things I’ve built.</h2><p>Projects where engineering decisions turn into something people can use.</p></div></div>
       <div class="project-list">
         <article class="project"><div class="project-num">01</div><div class="project-main"><span class="project-category">Sports · Full stack</span><h3>Sport IQ</h3><p>A sports prediction platform for MLB and NFL. I built FastAPI services and a Next.js interface for pregame probabilities, model explanations, leaderboards, favorites, and prediction history. Results are evaluated with accuracy and Brier score.</p><figure class="project-visual"><img src="images/sport-iq-games.png" width="1262" height="624" loading="lazy" alt="Sport IQ application with MLB and NFL navigation and a machine learning sports predictions headline"><figcaption>Actual application screenshot · source: project repository</figcaption></figure><div class="project-footer"><ul class="tags" aria-label="Technologies"><li>Python</li><li>FastAPI</li><li>Next.js</li><li>Supabase</li></ul><a href="https://github.com/Mustapha324/mlb-win-predictor" target="_blank" rel="noopener noreferrer">View repository ↗</a></div></div></article>
         <article class="project"><div class="project-num">02</div><div class="project-main"><span class="project-category">Audio · Applied AI</span><h3>AI DJ</h3><p>An audio mixing system that analyzes tempo, key, energy, and song structure to plan transitions. It generates playable WAV mixes with beat aware crossfades and includes a browser live deck with queue and search controls.</p><figure class="project-visual"><img src="images/ai-dj-process.svg" width="1200" height="540" loading="lazy" alt="Diagram of two analyzed tracks flowing into a transition plan and rendered mix"><figcaption>System diagram · based on the project architecture</figcaption></figure><div class="project-footer"><ul class="tags" aria-label="Technologies"><li>Python</li><li>Librosa</li><li>FastAPI</li></ul><a href="https://github.com/Mustapha324/AI-DJ" target="_blank" rel="noopener noreferrer">View repository ↗</a></div></div></article>
@@ -41,19 +50,13 @@
       </div>
     </div></section>
     <section class="section recognition-section" id="recognition"><div class="wrap">
-      <div class="section-heading"><p class="section-index">02 / Recognition</p><div><h2>Built with a team.<br>Recognized for impact.</h2><p>Selected awards and the work behind them.</p></div></div>
+      <div class="section-heading"><p class="section-index">03 / Recognition</p><div><h2>Built with a team.<br>Recognized for impact.</h2><p>Selected awards and the work behind them.</p></div></div>
       <article class="award-feature">
         <div class="award-art"><img src="images/jimmyit-original.png" width="1200" height="800" loading="lazy" alt="JimmyIt character and project wordmark on a coral background"></div>
         <div class="award-copy"><p class="award-kicker">Knight Hacks IX · 2026</p><h3>Best Overall Hack <em>2nd place</em></h3><p>JimmyIt is a handheld fidget toy and companion app that turns motor skill practice into encouraging games. I worked on game logic and integration; the project was built with Lena Tran, Ryan Schlosbon, and Jayden Quitos.</p><a href="https://devpost.com/software/jimmyit" target="_blank" rel="noopener noreferrer">See the winning project on Devpost ↗</a></div>
       </article>
       <div class="scholarship-row"><div class="scholarship-mark" aria-hidden="true">AI<span>✳</span></div><div><p class="award-kicker">University of Central Florida</p><h3>STRONG-AI Scholar</h3><p>Named to the 2026–2027 STRONG-AI cohort at UCF’s Center for Research in Computer Vision.</p></div><a href="https://www.crcv.ucf.edu/nsf-projects/strong/strong-ai-2026-2027-cohort/" target="_blank" rel="noopener noreferrer">View cohort ↗</a></div>
-    </div></section>
-    <section class="section experience-section" id="experience"><div class="wrap">
-      <div class="section-heading"><p class="section-index">03 / Experience</p><div><h2>Working with people<br>and systems.</h2></div></div>
-      <div class="experience-list">
-        <article class="experience-item"><div class="experience-date">Jun — Jul 2026</div><div><h3>Quickstart SimJam Intern</h3><p class="experience-org">UCF Institute for Simulation and Training (METIL)</p><p>Collaborated on a QIF-to-Unity pipeline that turns manufacturing geometry and topology into selectable meshes. I implemented and debugged C++ parsing and OpenCascade translation components, working with teammates across native processing and the Unity importer.</p><figure class="work-visual"><img src="images/qif-unity-process.svg" width="1200" height="380" loading="lazy" alt="Diagram showing QIF XML transformed through C++ and OpenCascade into a selectable Unity mesh"><figcaption>Internship workflow · illustrated from résumé details</figcaption></figure><ul class="tags" aria-label="Technologies"><li>C++</li><li>OpenCascade</li><li>Unity</li><li>XML</li></ul></div></article>
-        <article class="experience-item"><div class="experience-date">May 2026 — Present</div><div><h3>SOAR Peer Mentor</h3><p class="experience-org">University of Central Florida</p><p>Help incoming students navigate academics, campus resources, and university life through one-on-one support, engagement activities, and clear communication with students and staff.</p></div></article>
-      </div>
+      <div class="academic-note"><div><p class="award-kicker">Academic distinction</p><h3>Dean’s List &amp; Honor Roll</h3><p>Recognized across multiple terms for strong academic performance.</p></div><div class="gpa"><strong>3.75<span> / 4.00</span></strong><span>UCF GPA · through Summer 2026</span></div></div>
     </div></section>
     <section class="section about-section" id="about"><div class="wrap about-grid"><div><p class="section-index">04 / About</p><h2>Curious about the<br>whole system.</h2></div><div class="about-copy"><p>I’m pursuing a B.S. in Computer Science at UCF, with graduation expected in Spring 2028. My work spans backend APIs, machine learning, geometry processing, and interfaces that make technical systems easier to understand.</p><p>Outside projects, I’m involved with Knight Hacks, the National Society of Black Engineers, and UCF DARTS. I enjoy building with teams where technical depth and thoughtful design both matter.</p><div class="about-detail"><div><span class="small-label">Recent coursework</span><p>Systems Software, Discrete Structures, Data Structures &amp; Algorithms, Object-Oriented Programming</p></div><div><span class="small-label">Tools &amp; languages</span><p>Python, C++, C, C#, Java, TypeScript, FastAPI, Next.js, React, Docker, Git</p></div></div></div></div></section>
     <section class="contact-section" id="contact"><div class="wrap contact-grid"><div><p class="section-index">05 / Contact</p><h2>Let’s make<br>something useful.</h2><p>I’m open to software engineering internships and conversations about backend, simulation, and applied AI work.</p></div><div class="contact-links"><a href="mailto:mustapha324@outlook.com">Email me <span>↗</span></a><a href="https://github.com/Mustapha324" target="_blank" rel="noopener noreferrer">GitHub <span>↗</span></a><a href="https://www.linkedin.com/in/mustapha-strachan-3a161231b/" target="_blank" rel="noopener noreferrer">LinkedIn <span>↗</span></a><a href="assets/resume/Mustapha-Strachan-Resume.pdf" target="_blank" rel="noopener noreferrer">Résumé <span>↗</span></a></div></div></section>

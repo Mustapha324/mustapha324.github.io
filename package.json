@@ -1,0 +1,14 @@
+{
+  "name": "mustapha-portfolio",
+  "private": true,
+  "scripts": {
+    "build": "esbuild src/site-ui.jsx --bundle --minify --format=iife --target=es2019 --outfile=assets/js/site-ui.js"
+  },
+  "dependencies": {
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0"
+  },
+  "devDependencies": {
+    "esbuild": "^0.25.0"
+  }
+}

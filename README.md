@@ -10,6 +10,8 @@ Open the root-level `index.html` in a browser, or serve the repository root with
 
 Edit `index.html` for project, experience, and contact information. The stylesheet is `assets/css/main.css`. The published résumé is `assets/resume/Mustapha-Strachan-Resume.pdf`.
 
+The rocket introduction, reading progress, and return-to-top control are React components in `src/site-ui.jsx`. After editing them, run `npm install` and `npm run build` to update the committed browser bundle in `assets/js/site-ui.js`.
+
 Project links point to public repositories. Only add a live demo when its URL has been confirmed.
 
 ## Visual sources
