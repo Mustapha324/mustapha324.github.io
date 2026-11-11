@@ -19,5 +19,6 @@ Project links point to public repositories. Only add a live demo when its URL ha
 - `images/sport-iq-games.png`: the screenshot in the Sport IQ repository.
 - `images/ai-civilization.png`: artwork in the AI Civilization repository.
 - `images/jimmyit-original.png`: the JimmyIt project image on Devpost.
+- `images/grit-devpost.png`: the G.R.I.T. project image on Devpost.
 - `images/ai-dj-process.svg` and `images/qif-unity-process.svg`: illustrations of documented workflows, not application screenshots.
 - `assets/favicon.svg`: custom portfolio monogram.
